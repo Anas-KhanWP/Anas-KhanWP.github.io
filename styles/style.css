@@ -5,6 +5,7 @@ html {
 
 section {
     overflow: hidden;
+    margin: 0 !important;
 }
 
 body {
