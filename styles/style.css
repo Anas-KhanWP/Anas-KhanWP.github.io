@@ -281,6 +281,7 @@ nav ul li a {
 @media screen and (max-width: 768px) {
     .hero-section {
         padding: 50px 50px 0px 60px;
+        flex-direction: column;
     }
 
     .hero-section .block {
