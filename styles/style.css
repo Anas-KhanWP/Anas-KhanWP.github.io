@@ -112,6 +112,28 @@ nav ul li a {
     padding: 170px 185px;
 }
 
+@media only screen and (min-width: 1200px) {
+    .hero-section {
+        padding: 100px 200px;
+    }
+    
+    .hero-image {
+        bottom: 0;
+        top: unset;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .hero-section {
+        padding: 170px 185px;
+    }
+    
+    .hero-image {
+        bottom: unset;
+        top: 20px;
+    }
+}
+
 .hero-section .block {
     width: 50%;
 }
