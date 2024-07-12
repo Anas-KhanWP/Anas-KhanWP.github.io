@@ -312,10 +312,15 @@ nav ul li a {
     .about-section {
         flex-direction: column;
         width: 100%;
+        padding: 50px 0;
     }
 
     .about-section .block {
         width: 95%;
+    }
+
+    .about-section .block.left-block {
+        width: 100%;
     }
 
     .about-section .block.right-block {
