@@ -303,6 +303,7 @@ nav ul li a {
     .hero-image {
         position: relative;
         right: 0;
+        width: 100%;
     }
 
     .social-container::before {
