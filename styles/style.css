@@ -277,3 +277,13 @@ nav ul li a {
 .card.active .card-icon svg #SVGRepo_iconCarrier path {
     stroke: #46d94f !important;
 }
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        padding: 50px 50px;
+    }
+
+    .hero-section .block {
+        width: 100%;
+    }
+}
