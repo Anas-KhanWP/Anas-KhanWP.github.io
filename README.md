@@ -40,7 +40,7 @@ Here are some of the projects I've worked on:
   - **Images:** Shutterstock
   - **Mobile Optimization:** Viewport Meta, Apple Mobile Web Clips Icon, IPhone / Mobile Compatible
   - **SSL and Security:** Let's Encrypt SSL, SSL by Default
-  - **Hosting and DNS:** BlueHost DNS, Hostgator Mail
+  - **Hosting and DNS:** BlueHost DNS
   - **Advertising:** DoubleClick.Net
   - **Widgets:** WhatsApp
   - **Schema:** Organization Schema
@@ -71,14 +71,14 @@ Here are some of the skills I bring to the table:
 
 ## Experience
 
-### [Your Job Title]
-**[Company Name]** - [Start Date] to [End Date]
+### Intern
+**ARY Services** - June-2022 to Aug-2022
 
 - **Responsibilities:**
   - List of responsibilities and accomplishments.
 
-### [Your Job Title]
-**[Company Name]** - [Start Date] to [End Date]
+### Junior Python Developer
+**ARY Services** - Oct-2022 to Current
 
 - **Responsibilities:**
   - List of responsibilities and accomplishments.
