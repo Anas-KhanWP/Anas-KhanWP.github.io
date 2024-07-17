@@ -118,7 +118,7 @@ nav ul li a {
     .hero-section {
         padding: 100px 200px;
     }
-    
+
     .hero-image {
         bottom: 0;
         top: unset;
@@ -129,7 +129,7 @@ nav ul li a {
     .hero-section {
         padding: 170px 185px;
     }
-    
+
     .hero-image {
         bottom: unset;
         top: 20px;
@@ -204,7 +204,7 @@ nav ul li a {
     position: relative;
     display: flex;
     justify-content: center;
-    width: 82%;
+    /* width: 82%; */
     margin: auto;
     padding: 100px 185px;
     margin-left: -10px;
@@ -289,12 +289,14 @@ nav ul li a {
     .hero-section .block {
         width: 100%;
     }
-    
-    .hero-section .left-block .title, h1 {
+
+    .hero-section .left-block .title,
+    h1 {
         font-size: 2.5em;
     }
 
-    .hero-section .left-block .subtitle, h2 {
+    .hero-section .left-block .subtitle,
+    h2 {
         font-size: 1.5em;
     }
 
@@ -337,4 +339,90 @@ nav ul li a {
     .introduction {
         line-height: normal;
     }
+}
+
+/* PROJECTS SECTION */
+
+.prj-section {
+    padding: 60px 110px;
+}
+
+.title {
+    font-size: 2.5em;
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.prj-section .intro-subtitle {
+    margin-bottom: 50px;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.prj-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.prj {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 25px;
+    background: #242631;
+    margin-top: 60px;
+    text-decoration: none;
+}
+
+.prj.up {
+    margin-top: 0px;
+}
+
+.prj .prj-head {
+    background: #242631;
+    border-radius: 25px;
+    position: relative;
+    height: 60px;
+}
+
+.prj .prj-head::after {
+    content: '';
+    width: 100%;
+    height: 13px;
+    background: #242631;
+    position: absolute;
+    z-index: 1;
+    bottom: -12px;
+    left: 0;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.prj-img {
+    overflow: hidden;
+}
+
+.prj img {
+    position: relative;
+    z-index: 0;
+    transition: all .3s ease;
+}
+
+.prj:hover img {
+    transform: scale(1.05);
+}
+
+.all-prjs {
+    text-align: end;
+    margin-top: 100px;
+}
+
+.all-prjs:hover .view-all {
+    font-size: 1.2em;
 }
