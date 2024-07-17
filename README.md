@@ -46,7 +46,7 @@ Here are some of the projects I've worked on:
   - **Schema:** Organization Schema
 - **Link:** [Khan Local SEO](https://khanlocalseo.com/)
 
-### Project 2: [Project Name]
+<!-- ### Project 2: [Project Name]
 
 - **Description:** A brief description of the project.
 - **Technologies Used:** List of technologies used.
@@ -56,9 +56,9 @@ Here are some of the projects I've worked on:
 
 - **Description:** A brief description of the project.
 - **Technologies Used:** List of technologies used.
-- **Link:** [GitHub repository or live link]
+- **Link:** [GitHub repository or live link] -->
 
-For a complete list of my projects, please visit the [Projects](#projects) section on my portfolio site.
+For a complete list of my projects, please visit the [Projects](https://anas-khanwp.github.io/projects.html) section on my portfolio site.
 
 ## Skills
 
