@@ -232,6 +232,102 @@ nav ul li a {
     object-position: -108px !important;
 }
 
-.ofw img, .tja img, .zoau img, .mde img, .mts img {
+.ofw img,
+.tja img,
+.zoau img,
+.mde img,
+.mts img {
     object-position: -106px !important;
+}
+
+/* BURGER STYLES */
+
+@media screen and (max-width: 1024px) {
+    .head-section {
+        padding: 165px 0 165px 50px !important;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 2.5em !important;
+    }
+
+    .burger_container {
+        display: inline-block !important;
+    }
+
+    nav {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        background-color: #1a1a1a;
+        z-index: 1;
+        width: 100%;
+        text-align: center;
+        transition: all .3s ease-in-out;
+    }
+
+    nav.show {
+        right: 0 !important;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: revert;
+    }
+
+    nav ul li {
+        margin: 15px !important;
+    }
+
+    header {
+        justify-content: flex-start !important;
+    }
+
+    .logo {
+        height: fit-content;
+    }
+
+    .prj-section {
+        padding: 60px 15px;
+    }
+
+    .prj-container {
+        flex-direction: column;
+    }
+
+    .prj.up {
+        margin-top: 60px;
+    }
+}
+
+.burger_container {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    z-index: 2;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
 }

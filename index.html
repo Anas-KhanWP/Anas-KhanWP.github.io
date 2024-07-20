@@ -15,9 +15,23 @@
 
 <body>
     <header>
-        <a class="logo" href="#home">
+        <a class="logo" href="./index.html">
             <!-- <img src="path/to/your-logo.png" alt="Your Logo" class="logo"> -->Portfolio
         </a>
+        <div class="burger_container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <script>
+            function myFunction(x) {
+                x.classList.toggle("change");
+                document.querySelector('nav').classList.toggle('show');
+                document.querySelector('body').classList.toggle('nooverflow');
+            }
+        </script>
+
         <nav>
             <ul>
                 <li><a href="about.html">About</a></li>
@@ -37,8 +51,8 @@
             <a class="hero-button">Let's Connect</a>
         </div>
         <!-- <div class="block right-block"> -->
-            <!-- Add your hero image here -->
-            <img src="images/Anas-Khan.png" alt="Hero Image" class="hero-image">
+        <!-- Add your hero image here -->
+        <img src="images/Anas-Khan.png" alt="Hero Image" class="hero-image">
         <!-- </div> -->
 
         <div class="social-container">
@@ -206,11 +220,16 @@
             <h2 class="right-title">Let Me Introduce Myself...</h2>
             <h3 class="intro-subtitle">Allow me to introduce myself and my journey in web development.</h3>
             <p class="introduction">
-                Welcome to my portfolio! I'm Anas, a dedicated Full Stack Developer with a deep-seated passion for crafting
-                seamless, intuitive websites and applications. Over the years, I've honed my skills in developing robust APIs,
-                designing elegant front-end interfaces, and architecting scalable backend solutions. My approach blends creativity
-                with technical expertise to deliver projects that not only meet but exceed client expectations. I thrive on the
-                challenges of creating engaging digital experiences, continuously learning and integrating cutting-edge technologies
+                Welcome to my portfolio! I'm Anas, a dedicated Full Stack Developer with a deep-seated passion for
+                crafting
+                seamless, intuitive websites and applications. Over the years, I've honed my skills in developing robust
+                APIs,
+                designing elegant front-end interfaces, and architecting scalable backend solutions. My approach blends
+                creativity
+                with technical expertise to deliver projects that not only meet but exceed client expectations. I thrive
+                on the
+                challenges of creating engaging digital experiences, continuously learning and integrating cutting-edge
+                technologies
                 to stay ahead in the ever-evolving world of web development.
             </p>
         </div>
@@ -271,18 +290,9 @@
             <div class="footer-column">
                 <h3>Contact Info</h3>
                 <ul>
-                    <li>Email: <a href="mailto:anas@example.com">anas@example.com</a></li>
+                    <li>Email: <a href="mailto:anaskhanwp@gmail.com">anaskhanwp@gmail.com</a></li>
                     <li>Phone: <a href="tel:+923152460477">+92 315 246 0477</a></li>
-                    <li>Location: City, Country</li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Follow Me</h3>
-                <ul class="social-icons">
-                    <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li>Location: Karachi, Pakistan</li>
                 </ul>
             </div>
         </div>
