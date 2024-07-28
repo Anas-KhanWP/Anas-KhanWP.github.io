@@ -217,22 +217,93 @@
 
 
         <div class="block right-block">
-            <h2 class="right-title">Let Me Introduce Myself...</h2>
-            <h3 class="intro-subtitle">Allow me to introduce myself and my journey in web development.</h3>
-            <p class="introduction">
-                Welcome to my portfolio! I'm Anas, a dedicated Full Stack Developer with a deep-seated passion for
-                crafting
-                seamless, intuitive websites and applications. Over the years, I've honed my skills in developing robust
-                APIs,
-                designing elegant front-end interfaces, and architecting scalable backend solutions. My approach blends
-                creativity
-                with technical expertise to deliver projects that not only meet but exceed client expectations. I thrive
-                on the
-                challenges of creating engaging digital experiences, continuously learning and integrating cutting-edge
-                technologies
-                to stay ahead in the ever-evolving world of web development.
-            </p>
+            <div class="intro-right-block">
+                <h2 class="right-title">Let Me Introduce Myself...</h2>
+                <h3 class="intro-subtitle">Allow me to introduce myself and my journey in web development.</h3>
+                <p class="introduction">
+                    Welcome to my portfolio! I'm Anas, a dedicated Full Stack Developer with a deep-seated passion for
+                    crafting
+                    seamless, intuitive websites and applications. Over the years, I've honed my skills in developing
+                    robust
+                    APIs,
+                    designing elegant front-end interfaces, and architecting scalable backend solutions. My approach
+                    blends
+                    creativity
+                    with technical expertise to deliver projects that not only meet but exceed client expectations. I
+                    thrive
+                    on the
+                    challenges of creating engaging digital experiences, continuously learning and integrating
+                    cutting-edge
+                    technologies
+                    to stay ahead in the ever-evolving world of web development.
+                </p>
+            </div>
+            <div class="frontend-right-block">
+                <h2 class="right-title">Exploring Frontend Development...</h2>
+                <h3 class="intro-subtitle">Dive into the world of frontend development with me.</h3>
+                <p class="introduction">
+                    Welcome to the frontend section of my portfolio! As a Full Stack Developer, my passion for crafting
+                    seamless and visually appealing user interfaces is at the heart of what I do. I specialize in
+                    creating
+                    responsive, dynamic, and accessible front-end experiences using modern frameworks and technologies
+                    like
+                    HTML, CSS, JavaScript, and React. My goal is to build intuitive and engaging interfaces that provide
+                    users with a smooth and enjoyable journey. By keeping up with the latest trends and best practices
+                    in
+                    frontend development, I ensure that every project is not only aesthetically pleasing but also
+                    performant
+                    and user-friendly.
+                </p>
+            </div>
+            <div class="backend-right-block">
+                <h2 class="right-title">Delving into Backend Development...</h2>
+                <h3 class="intro-subtitle">Discover my approach to building robust backend systems.</h3>
+                <p class="introduction">
+                    Welcome to the backend section of my portfolio! As a Full Stack Developer, I take great pride in
+                    designing and
+                    implementing scalable, secure, and efficient backend solutions. My expertise includes developing
+                    APIs,
+                    integrating databases, and ensuring seamless server-side functionality using technologies such as
+                    Node.js,
+                    Express, and SQL/NoSQL databases. My approach focuses on creating solid foundations that support the
+                    front-end, ensuring smooth data flow and optimal performance. By leveraging best practices and
+                    staying updated
+                    with the latest advancements in backend development, I strive to deliver robust solutions that power
+                    exceptional user experiences.
+                </p>
+            </div>
         </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const cards = document.querySelectorAll('.card');
+                const rightBlocks = document.querySelectorAll('.block.right-block div');
+
+                document.querySelector('.intro-right-block').classList.add('active');
+
+                cards.forEach(card => {
+                    card.addEventListener('click', function () {
+                        // Remove active class from all cards and right blocks
+                        cards.forEach(c => c.classList.remove('active'));
+                        rightBlocks.forEach(rb => rb.classList.remove('active'));
+
+                        // Add active class to the clicked card
+                        this.classList.add('active');
+
+                        // Determine which right block to show
+                        let cardClass = this.classList[1]; // Get the second class name
+                        if (cardClass === 'about_me') {
+                            cardClass = 'intro'; // Use 'intro' to match the 'intro-right-block' class
+                        }
+
+                        const rightBlock = document.querySelector(`.${cardClass}-right-block`);
+
+                        // Show the corresponding right block
+                        rightBlock.classList.add('active');
+                    });
+                });
+            });
+        </script>
     </section>
 
     <section class="prj-section">
@@ -249,12 +320,12 @@
                     <img src="images/prj-images/KhanLocalSEO.PNG" alt="KhanLocalSEO" />
                 </div>
             </a>
-            <a href="projects/khanlocalseo.html" class="prj up">
+            <a href="https://github.com/Anas-KhanWP/scraper_BOT-1_v3.2" class="prj up">
                 <div class="prj-head">
-                    <h2 class="prj-title">Khan Local SEO</h2>
+                    <h2 class="prj-title">Auction Scraper</h2>
                 </div>
                 <div class="prj-img">
-                    <img src="images/prj-images/KhanLocalSEO.PNG" alt="KhanLocalSEO" />
+                    <img src="images/prj-images/auction scraper.PNG" alt="KhanLocalSEO" />
                 </div>
             </a>
             <a href="projects/khanlocalseo.html" class="prj">
